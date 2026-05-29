@@ -260,7 +260,6 @@ async def lifespan(app: FastAPI):
     _model = whisperx.load_model(WHISPER_MODEL, DEVICE, compute_type=COMPUTE_TYPE)
     _diarize_model = DiarizationPipeline(
         model_name=WHISPERX_DIARIZATION_MODEL,
-        use_auth_token=HF_TOKEN,
         device=DEVICE,
     )
     if WHISPERX_DEFAULT_LANGUAGE:
