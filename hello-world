@@ -1,0 +1,7 @@
+# TEST FILE — substitui o server real para validar o mecanismo de curl do onstart
+# Se voce ver esse arquivo rodando, o replace_server_app_file funcionou corretamente.
+# Substitua pelo server real apos confirmar.
+
+print("=" * 60)
+print("  [whisperx] HELLO WORLD — server_whisperx.py substituido!")
+print("=" * 60)
