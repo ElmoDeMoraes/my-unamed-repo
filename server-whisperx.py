@@ -47,6 +47,14 @@ WHISPERX_ENABLE_TF32 = os.environ.get("WHISPERX_ENABLE_TF32", "false").strip().l
 LOGGER = logging.getLogger("whisperx.server")
 logging.basicConfig(level=logging.INFO)
 
+_SERVER_FILE_VERSION = "2026-05-29"
+_SEP = "=" * 60
+LOGGER.info(_SEP)
+LOGGER.info("  [whisperx] SERVER APP FILE SUBSTITUIDO COM SUCESSO")
+LOGGER.info("  versao: %s", _SERVER_FILE_VERSION)
+LOGGER.info("  fonte:  %s", os.environ.get("SERVER_WHISPER_APP_FILE", "(baked)"))
+LOGGER.info(_SEP)
+
 _model = None
 _diarize_model = None
 _align_models: dict = {}
